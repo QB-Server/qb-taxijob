@@ -273,15 +273,15 @@ function TaxiGarage()
         }
     end
     -- qb-bossmenu:client:openMenu
-    if PlayerJob.name == "taxi" and PlayerJob.isboss and Config.UseTarget then
-        vehicleMenu[#vehicleMenu+1] = {
-            header = Lang:t("menu.boss_menu"),
-            txt = "",
-            params = {
-                event = "qb-bossmenu:client:forceMenu"
-            }
-        }
-    end
+    -- if PlayerJob.name == "taxi" and PlayerJob.isboss and Config.UseTarget then
+    --     vehicleMenu[#vehicleMenu+1] = {
+    --         header = Lang:t("menu.boss_menu"),
+    --         txt = "",
+    --         params = {
+    --             event = "qb-bossmenu:client:forceMenu"
+    --         }
+    --     }
+    -- end
 
     vehicleMenu[#vehicleMenu+1] = {
         header = Lang:t("menu.close_menu"),
